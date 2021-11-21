@@ -14,10 +14,10 @@
 ## Installation 
 
 
-# clone the repo
+##### clone the repo
 $ git clone https://github.com/Roxcoder/Generator.git
 
-### change directory to Generator
+##### change directory to Generator
 $ cd Generator
 
 ## Run as windows
