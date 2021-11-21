@@ -3,8 +3,8 @@
 <a target="_blank" href="https://www.python.org/downloads/" title="Python version"><img src="https://img.shields.io/badge/python-%3E=_3.6-green.svg"></a>
 
 </p>
+<br>
 ## Description
-
 
 ```console
 This script was created to help users create random and strong passwords in an easy way. All the user has to do is specify the number of characters he wants to stop the script from working. Enter the value 0
@@ -18,7 +18,7 @@ $ git clone https://github.com/Roxcoder/Generator.git
 # change directory to Generator
 $ cd Generator
 ```
-## Run for windows
+## Run as windows
 
 ```console
 python Generator.py
