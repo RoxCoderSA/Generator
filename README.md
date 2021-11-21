@@ -5,8 +5,10 @@
 </p>
 ## Description
 
-This script was created to help users create random and strong passwords in an easy way. All the user has to do is specify the number of characters he wants to stop the script from working. Enter the value 0
+```console
 
+This script was created to help users create random and strong passwords in an easy way. All the user has to do is specify the number of characters he wants to stop the script from working. Enter the value 0
+```
 ## Installation 
 
 ```console
@@ -15,15 +17,15 @@ $ git clone https://github.com/Roxcoder/Generator.git
 
 # change directory to Generator
 $ cd Generator
-
+```
 ## Run for windows
 
+```console
 python Generator.py
-
+```
 ## Run as Linux
-
+```console
 python3 Generator
-
 ```
 
 ## Usege 
