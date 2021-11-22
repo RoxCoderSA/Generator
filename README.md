@@ -27,7 +27,8 @@ python Generator.py
 ```
 ## Run as Linux
 ```console
-python3 Generator
+sudo chmod +x Generator.py
+python3 Generator.py
 ```
 
 ## Usege 
