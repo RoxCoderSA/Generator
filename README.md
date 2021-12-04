@@ -30,12 +30,11 @@ python Generator.py -l number of length |  example: python Generator.py -l 5
 ```
 ## Run as Linux
 ```
+sudo chmod +x Generator.py
+
 python3 Generator
 or 
 python3 Generator.py -l number of length |  example: python3 Generator.py -l 5
-
-sudo chmod +x Generator.py
-python3 Generator.py
 
 ```
 
