@@ -23,21 +23,20 @@ $ cd Generator
 
 ## Run as windows
 
-```console
+```
 python Generator.py
 or 
 python Generator.py -l number of length |  example: python Generator.py -l 5
 ```
 ## Run as Linux
-```console
-<<<<<<< HEAD
+```
 python3 Generator
 or 
 python3 Generator.py -l number of length |  example: python3 Generator.py -l 5
 =======
 sudo chmod +x Generator.py
 python3 Generator.py
->>>>>>> 438b9cb7a641639c60ea38f8bac77bf4ee7de505
+
 ```
 
 ## Usege 
