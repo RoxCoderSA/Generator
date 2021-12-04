@@ -1,24 +1,27 @@
 <p align=center>
 
 <a target="_blank" href="https://www.python.org/downloads/" title="Python version"><img src="https://img.shields.io/badge/python-%3E=_3.6-green.svg"></a>
+<a target="_blank" href="https://twitter.com/saudalminqah" title="My profile on twitter"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social"></a>
 
 </p>
+
+
+
 ## Description
 
-```console
+###### This script was created to help users create random and strong passwords in an easy way. All the user has to do is specify the number of characters he wants to stop the script from working. Enter the value 0
 
-This script was created to help users create random and strong passwords in an easy way. All the user has to do is specify the number of characters he wants to stop the script from working. Enter the value 0
-```
+
 ## Installation 
 
-```console
-# clone the repo
+
+##### clone the repo
 $ git clone https://github.com/Roxcoder/Generator.git
 
-# change directory to Generator
+##### change directory to Generator
 $ cd Generator
-```
-## Run for windows
+
+## Run as windows
 
 ```console
 python Generator.py
@@ -27,9 +30,14 @@ python Generator.py -l number of length |  example: python Generator.py -l 5
 ```
 ## Run as Linux
 ```console
+<<<<<<< HEAD
 python3 Generator
 or 
 python3 Generator.py -l number of length |  example: python3 Generator.py -l 5
+=======
+sudo chmod +x Generator.py
+python3 Generator.py
+>>>>>>> 438b9cb7a641639c60ea38f8bac77bf4ee7de505
 ```
 
 ## Usege 
