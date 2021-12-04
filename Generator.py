@@ -1,6 +1,7 @@
 # Genarate Password
-import string
-import random
+import string # importing string library 
+import random # importing random library 
+import argparse # importing argparse  library
 
 print("""
    _____                           _             
@@ -12,7 +13,39 @@ print("""
                                                                                                                            
 """)
 
+#Assgin argument from argparser library to parser 
+parser=argparse.ArgumentParser(description="this script help users to create generate password")
+#Adding new argument name length to make the user enter the length he want 
+parser.add_argument( "-l" , "--length" , help='enter the length password' , type=int) 
+#Take all argument from argparse and assgin to args value 
+args=parser.parse_args()
 
+
+#Identify function call arg_Generator 
+def arg_Generator():
+    #Creating variable name counter 
+    counter = 1
+    #Creating varible string name arg_password 
+    arg_password = ''
+#Creating while loop starting from 1 to the length the user want 
+    while(counter <= args.length):
+        #Call the function radomint to random number
+        z = random.randint(0,64)
+        #Call the function printtable to print letters and special charcters + randomint numbers
+        arg_password += string.printable[z]
+        #Increase varible counter as 1
+        counter+=1
+        #Printing  while loop rsults
+    print(arg_password)
+    #Printing new line 
+    print("\n")
+#Check if the user run script with argument or not 
+if args.length:
+    #Call the function if the user run the script with argument 
+    arg_Generator()
+    #Stoping script when length equal 0
+
+#####################################################################################################################################################################
 
 stop = False  #value for stop condetion
 

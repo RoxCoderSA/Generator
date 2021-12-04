@@ -22,10 +22,14 @@ $ cd Generator
 
 ```console
 python Generator.py
+or 
+python Generator.py -l number of length |  example: python Generator.py -l 5
 ```
 ## Run as Linux
 ```console
 python3 Generator
+or 
+python3 Generator.py -l number of length |  example: python3 Generator.py -l 5
 ```
 
 ## Usege 
