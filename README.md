@@ -38,6 +38,8 @@ python3 Generator.py -l number of length |  example: python3 Generator.py -l 5
 
 ```
 
+ <img src="https://raw.githubusercontent.com/Roxcoder/Generator/master/Script.JPG" alt="Script">
+
 ## Usege 
 
 ```console
