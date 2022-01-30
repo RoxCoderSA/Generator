@@ -38,12 +38,36 @@ def arg_Generator():
         #Printing  while loop rsults
     print(arg_password)
     #Printing new line 
-    print("\n")
+    print('\n')
+    #asking the user if want save password
+    savepass = input('Do you want save password [y/n/x] : ').lower()
+    # If the value equal yes it create text file call list.txt 
+    if savepass == 'y':
+       file = open('list.txt', 'a')
+       #Asking the user give the name for password to remember what this password for 
+       namepass = input('Give a name password for : ')
+       #Saving the password and the name value in list.txt file 
+       file.writelines(arg_password + ' ======> ' + namepass + '\n')
+       #close the text file after writing the password and name password
+       file.close()
+       #Exiting from script after saving the password
+       exit(0)
+       #If the user does not want the password the function recall a same length the user request in frist time 
+    elif savepass == 'n':
+        arg_Generator()
+        #If the user enter the letter x it well be exit from script 
+    elif savepass == 'x':
+        print('You enter x value for exit')
+        exit(0)
+        #If the user entered any wrong value the script tell the user the value is incorrect and exiting from script 
+    else:
+        print('You entered wrong value try again')
+        exit(0)
 #Check if the user run script with argument or not 
 if args.length:
     #Call the function if the user run the script with argument 
     arg_Generator()
-    #Stoping script when length equal 0
+    #Stoping script when length equal 0 
 
 #####################################################################################################################################################################
 
@@ -63,7 +87,30 @@ while stop != True: #while loop infinty loop to do genarator password
         print("\n") #newline for space
         print(password) #print the password that come from printtable and randomint
         print("\n")#newline for space
-
+        #asking the user if want save password
+        savepassword = input('Do you want save password [y/n/x] : ').lower()
+        # If the value equal yes it create text file call list.txt
+        if savepassword == 'y':
+            file = open('list.txt','a')
+            #Asking the user give the name for password to remember what this password for
+            namepassword = input('Give a name password for : ')
+            #Saving the password and the name value in list.txt file
+            file.writelines(password + ' ------> ' + namepassword + '\n')
+            #close the text file after writing the password and name password
+            file.close()
+            #Exiting from script after saving the password
+            exit(0)
+            #If the user does not want the password the function recall a same length the user request in frist time 
+        elif savepassword == 'n':
+            Genarator()
+            #If the user enter the letter x it well be exit from script 
+        elif savepassword == 'x':
+            print('You enter x value for exit')
+            exit(0)
+            #If the user entered any wrong value the script tell the user the value is incorrect and exiting from script
+        else:
+            print('You entered wrong value try again')
+            exit(0)
     if lenNumber == 0:#condetion for stop final result is 0
         stop = True #change the value stop to true to stop condetion
         break #going out from function
